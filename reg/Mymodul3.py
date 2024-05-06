@@ -121,7 +121,7 @@ def recover_password(indeks) -> any:
 
     smtp_server = 'smtp.gmail.com'
     port = 587
-    sender_email = "dokumnet2016@gmail.com"
+    sender_email = "pavel.jegorov1232@gmail.com"
     to_email = input("sisesta teie emaili: ")
     password = "ejin jdpi iqzs tspp"
 
@@ -129,7 +129,7 @@ def recover_password(indeks) -> any:
     msg = EmailMessage()
     msg.set_content(login_password_list[1][indeks])
     msg["Subject"] = "Parooli tastamine "
-    msg["From"] = "dokumnet2016@gmail.com"
+    msg["From"] = "pael.jegorov1232@gmail.com"
     msg["To"] = to_email
 
     try:
